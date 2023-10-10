@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background: url("../images/deepslate_tiles.png");
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(9,9,121,0) 20%, rgba(255,61,0,1) 100%) no-repeat;
+    background-position-y: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+
+    #shifumi {
+        width: 100%;
+        max-width: 1000px;
+        height: 100vh;
+        text-align: center;
+
+        #header {
+            text-align: center;
+            padding-top: 50px;
+
+            img {
+                width: 80%;
+                height: 80%;
+                max-width: 570px;
+                max-height: 130px;
+            }
+        }
+
+        #dialogs {
+            margin-bottom: 50px;
+
+            .dialog {
+                max-width: 500px;
+                width: 90%;
+                text-align: justify;
+
+                p {
+                    padding: 10px;
+                }
+            }
+
+            #dialog-header {
+                margin-top: 50px;
+                margin-bottom: 10px;
+                display: flex;
+
+                .header-box {
+                    background: rgba(0, 0, 0, 0.6);
+                    width: 100%;
+                    text-align: center;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    .box-image {
+                        padding-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .box-text {
+
+                    }
+
+                    #piglin-icon {
+                        width: 32px;
+                        height: 22px;
+                    }
+
+                    #player-icon {
+                        width: 25px;
+                        height: 22px;
+                    }
+
+
+                }
+
+                .round-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                    }
+                }
+
+                .piglin-box {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+            #dialog-box {
+                background: rgba(0, 0, 0, 0.6);
+                min-height: 100px;
+            }
+
+            .flex-dialog-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        #choice-title {
+            font-size: 200%;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #choices {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 500px;
+
+            .choice {
+                text-align: center;
+                user-select: none;
+
+                .image:hover {
+                    border: 3px solid white;
+                }
+
+                .image {
+                    background: url("../images/widgets3.png") no-repeat;
+                    background-size: 80px 80px;
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border: 3px solid black;
+                    cursor: pointer;
+
+                    img {
+                        width: 65%;
+                        height: 65%;
+                    }
+                }
+
+                .force-border {
+                    border: 3px solid white;
+                }
+            }
+        }
+
+        #replay {
+            display: none;
+            margin-top: 50px;
+
+            img {
+                width: 200px;
+                height: 45px;
+            }
+        }
+
+        #replay:hover {
+            cursor: pointer;
+        }
+    }
+}
+
