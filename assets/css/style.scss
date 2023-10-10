@@ -9,10 +9,11 @@ body {
     background: url("../images/deepslate_tiles.png");
     color: white;
     font-family: 'Minecraft', sans-serif;
+    overflow-x: hidden;
 }
 
 #particles-js {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -100;
@@ -21,7 +22,7 @@ body {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(9,9,121,0) 20%, rgba(255,61,0,1) 100%) no-repeat;
+    background: linear-gradient(180deg, rgba(9,9,121,0) 20%, rgba(255,61,0,1) 100%) no-repeat fixed;
     background-position-y: 400px;
 }
 
@@ -169,6 +170,10 @@ body {
                     }
                 }
 
+                p {
+                    margin-top: 5px;
+                }
+
                 .force-border {
                     border: 3px solid white;
                 }
@@ -187,6 +192,24 @@ body {
 
         #replay:hover {
             cursor: pointer;
+        }
+
+        #credits {
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+
+            p, a {
+                opacity: .7;
+            }
+
+            a {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            a:hover {
+                opacity: 100%;
+            }
         }
     }
 }
